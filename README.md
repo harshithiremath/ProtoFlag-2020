@@ -1,12 +1,11 @@
 # ProtoFlag 2020 Write-up
-### *ProtoFlag 2020* was a basic Jeopardy-style CTF hosted by the *Protocol Club, BMSCE*
+### *ProtoFlag 2020* was a basic Jeopardy-style CTF hosted by the *Protocol Club, BMSCE* from 3rd - 5th March 2020, during the CoVid-19 Quaratine
 
 # Challenges
 
 ## Day 1
 
 ### The First Flag
----
 **Ans**: A link can seen in the Poster of the event. The link is <http://bit.ly/protoctf-1>. Visiting the link will take us to a page with a flag flag displayed. Inspecting the sourcecode of the page reveals the flag.
 
 ### Look Closely!
