@@ -12,14 +12,14 @@ from 3rd - 5th March 2020, during the CoVid-19 Quaratine
 
 ### The First Flag
 ---
-A link can seen in the Poster of the event.  
+A link can be seen in the Poster of the event.  
 **Ans**: Visit the link, where a fake flag is displayed. Inspecting the sourcecode of the page reveals the real flag.
 
 ### Look Closely!
 ---
 You can hide data in messages by adding them to the last few bytes of the images without changing the actual image as it mostly contains metadata.  
 Given Image: [File](Files/try-me.jpg)  
-**Ans**: Open the image in a hex editor and scroll the last few bytes of the image to get your flag. If you are running Linux, you might as well pass the image into strings; run `strings img_name` in terminal  
+**Ans**: Open the image in a hex editor and scroll down to the last few bytes of the image to get your flag. If you are running Linux, you might as well pass the image into strings; run `strings img_name` in terminal  
 
 ### Some Cipher!
 ---
@@ -31,14 +31,14 @@ XOR Encryption is symmetric, which means if you try to encode the already encode
 ### Get The Joke?
 ---
 The clue given was, 'HTTP Method'. GET is an HTTP Method which accepts parameters passed along with the link.  
-Link: [Flag 2](<http://virus-ctf.000webhostapp.com/flag2.php>).  
+Link: [Flag 2](http://virus-ctf.000webhostapp.com/flag2.php).  
 **Ans**: Appending '?Joke=Right' to the link takes us to another page which has a textbox. Viewing the source code makes it obvious that 'Michael Scott' has to be entered into the textbox. The flag will be in the page in white.
 
 ### Edward Maya
 ---
-Edward Maya had a Hit-single 'Stereo Love'. So, obviously the challenge had to do with stereo channels. The 'old fashioned encoding' mentioned referred to 'Morse Code'. After listening to the audio in a pair of headphones, one can hear that left and right audio signals are not the same. "The French man in South Carolina" refers to Beufort Cipher, which is a variant of Vigenere Cipher.  
+Edward Maya had a Hit-single 'Stereo Love'. So, obviously the challenge had to do with stereo channels. The 'old fashioned encoding' mentioned refers to Morse Code. After listening to the audio in a pair of headphones, one can hear that left and right audio signals are not the same. "The French man in South Carolina" refers to Beufort Cipher, which is a variant of Vigenere Cipher.  
 Link: [Audio file](Files/edward_maya.mp3).  
-**Ans**:  Splitting the audio into left and right audio channels in audio tools like Audacity, we get two audio files. After decoding each audio file in a Morse Code decoder, we get 'RANDOMKEY' and an encrypted message. Replace the commas with {} and x's with _, and decipher the message using the Key, 'RANDOMKEY'.
+**Ans**:  Splitting the audio into left and right audio channels using audio tools like Audacity, we get two audio files. After decoding each audio file in a Morse Code decoder, we get 'RANDOMKEY' and an encrypted message. Replace the commas with {} and x's with "\_", and decipher the message using the Key, 'RANDOMKEY'.
 
 ### I Love Binary
 ---
