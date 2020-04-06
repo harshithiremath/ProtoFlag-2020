@@ -3,9 +3,9 @@
 
 # Challenges
 
-## Day 1
-
-### The First Flag
+Day 1
+---
+## The First Flag
 **Ans**: A link can seen in the Poster of the event. The link is <http://bit.ly/protoctf-1>. Visiting the link will take us to a page with a flag flag displayed. Inspecting the sourcecode of the page reveals the flag.
 
 ### Look Closely!
