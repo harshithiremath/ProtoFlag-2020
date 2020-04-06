@@ -1,5 +1,6 @@
 # ProtoFlag 2020 Write-up
-*ProtoFlag 2020* was a basic Jeopardy-style CTF hosted by the *Protocol Club, BMSCE* from 3rd - 5th March 2020, during the CoVid-19 Quaratine
+ProtoFlag 2020 was a basic Jeopardy-style __CTF__ hosted by the __Protocol Club, BMSCE__  
+from 3rd - 5th March 2020, during the CoVid-19 Quaratine
 
 # Day 1
 
@@ -11,7 +12,7 @@ A link can seen in the Poster of the event. [Poster](<http://bit.ly/protoctf-1>)
 ### Look Closely!
 ---
 You can hide data in messages by adding them to the last few bytes of the images without changing the actual image as it mostly contains metadata.  
-**Ans**: Open the image in a hex editor and scroll the last few bytes of the image to get your flag. If you are running Linux, you might as well pass the image into strings; run this in terminal `strings img_name`
+**Ans**: Open the image in a hex editor and scroll the last few bytes of the image to get your flag. If you are running Linux, you might as well pass the image into strings; run `strings img_name` in terminal  
 
 ### Some Cipher!
 ---
