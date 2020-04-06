@@ -6,7 +6,7 @@ from 3rd - 5th March 2020, during the CoVid-19 Quaratine
 
 ### The First Flag
 ---
-A link can seen in the Poster of the event. [Poster](<http://bit.ly/protoctf-1>)  
+A link can seen in the Poster of the event. [Poster](Files/poster.jpeg)  
 **Ans**: Visit the link, where a fake flag is displayed. Inspecting the sourcecode of the page reveals the real flag.
 
 ### Look Closely!
