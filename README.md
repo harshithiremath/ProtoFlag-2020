@@ -1,6 +1,9 @@
 # ProtoFlag 2020 Write-up
+===
 ProtoFlag 2020 was a basic Jeopardy-style __CTF__ hosted by the __Protocol Club, BMSCE__  
-from 3rd - 5th March 2020, during the CoVid-19 Quaratine
+from 3rd - 5th March 2020, during the CoVid-19 Quaratine  
+  
+  
 ![alt text][poster]
 
 [poster]: Files/poster.jpeg
@@ -8,13 +11,13 @@ from 3rd - 5th March 2020, during the CoVid-19 Quaratine
 
 ### The First Flag
 ---
-A link can seen in the Poster of the event. 
+A link can seen in the Poster of the event.  
 **Ans**: Visit the link, where a fake flag is displayed. Inspecting the sourcecode of the page reveals the real flag.
 
 ### Look Closely!
 ---
 You can hide data in messages by adding them to the last few bytes of the images without changing the actual image as it mostly contains metadata.  
-Given Image: [File](Files/try-me.jpg)
+Given Image: [File](Files/try-me.jpg)  
 **Ans**: Open the image in a hex editor and scroll the last few bytes of the image to get your flag. If you are running Linux, you might as well pass the image into strings; run `strings img_name` in terminal  
 
 ### Some Cipher!
@@ -39,7 +42,7 @@ Link: [Audio file](Files/edward_maya.mp3).
 ### I Love Binary
 ---
 Given hints were, "Maybe NOT".  
-Given binary: [File](Files/i_love_binary.txt)
+Given binary: [File](Files/i_love_binary.txt)  
 **Ans**: Simply invert the binary digits and convert them to ascii. The flag will be visible in the large paragraph.
 
 # Day 3
@@ -65,7 +68,7 @@ Given file: [Mystery File](Files/unknown_file.jpg)
 ---
 Clues given were, "Real light is in the dark" and "1998". These refer to Snow Steganography Cipher. Snow is a way of encrypting a message into a file, by appending tabs and spaces to the end of file.  
 Given Base64 encrypted key, `S2V5MTIz`.  
-The file: [Snow encrypted File]<Files/snow>. Download Snow tool from [here](http://www.darkside.com.au/snow/)  
+The file: [Snow encrypted File](Files/snow). Download Snow tool from [here](http://www.darkside.com.au/snow/)  
 **Ans**: Decrypt the given key to get, 'Key123'. Using 'Key123' as the password, decipher the flag with Snow.  
 Run `Snow -C -p "Key123" quest_out`
 
@@ -80,7 +83,7 @@ Crypto: [Cute Crypt](http://virus-ctf.000webhostapp.com/crypt_me.php)
 ### I'm Split Up
 ---
 The files are actually a 10x10 QR code split into a 100 files.  
-Link: [Files](Files/im_split_up_data.zip)
+Link: [Files](Files/im_split_up_data.zip)  
 **Ans**: Use a good image editor or write a program/script to piece all the images together and scan the QR code finally.
 
 ### Look Closely II
