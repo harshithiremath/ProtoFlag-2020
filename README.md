@@ -1,12 +1,14 @@
 # ProtoFlag 2020 Write-up
 ProtoFlag 2020 was a basic Jeopardy-style __CTF__ hosted by the __Protocol Club, BMSCE__  
 from 3rd - 5th March 2020, during the CoVid-19 Quaratine
+![alt text][poster]
 
+[poster]: Files/poster.jpeg
 # Day 1
 
 ### The First Flag
 ---
-A link can seen in the Poster of the event. [Poster](Files/poster.jpeg)  
+A link can seen in the Poster of the event. 
 **Ans**: Visit the link, where a fake flag is displayed. Inspecting the sourcecode of the page reveals the real flag.
 
 ### Look Closely!
