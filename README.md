@@ -12,6 +12,7 @@ A link can seen in the Poster of the event. [Poster](<http://bit.ly/protoctf-1>)
 ### Look Closely!
 ---
 You can hide data in messages by adding them to the last few bytes of the images without changing the actual image as it mostly contains metadata.  
+Given Image: [File](Files/try-me.jpg)
 **Ans**: Open the image in a hex editor and scroll the last few bytes of the image to get your flag. If you are running Linux, you might as well pass the image into strings; run `strings img_name` in terminal  
 
 ### Some Cipher!
@@ -30,12 +31,13 @@ Link: [Flag 2](<http://virus-ctf.000webhostapp.com/flag2.php>).
 ### Edward Maya
 ---
 Edward Maya had a Hit-single 'Stereo Love'. So, obviously the challenge had to do with stereo channels. The 'old fashioned encoding' mentioned referred to 'Morse Code'. After listening to the audio in a pair of headphones, one can hear that left and right audio signals are not the same. "The French man in South Carolina" refers to Beufort Cipher, which is a variant of Vigenere Cipher.  
-Link: [Audio file](<https://drive.google.com/file/d/1wHz-ySMUcNmJOmihXp-1J1R_zLVCSBqi/view>).  
+Link: [Audio file](Files/edward_maya.mp3).  
 **Ans**:  Splitting the audio into left and right audio channels in audio tools like Audacity, we get two audio files. After decoding each audio file in a Morse Code decoder, we get 'RANDOMKEY' and an encrypted message. Replace the commas with {} and x's with _, and decipher the message using the Key, 'RANDOMKEY'.
 
 ### I Love Binary
 ---
 Given hints were, "Maybe NOT".  
+Given binary: [File](Files/i_love_binary.txt)
 **Ans**: Simply invert the binary digits and convert them to ascii. The flag will be visible in the large paragraph.
 
 # Day 3
@@ -54,14 +56,14 @@ The given binary is `01100011011011110111011001100110011001010110011001100101`. 
 ### Infinity Hunt
 ---
 Hints given were, "Found in a box, in a box" and "File extensions are deceiving", which mean the file is a zip. If you are running Linux, you can also find it out by passing the file into files; run `files file_name` in terminal.  
-Given file: [Mystery File](<https://drive.google.com/file/d/1CoUDV3Hnbbzv6_R_LeMX8D1RK0rGzUum/view>)  
+Given file: [Mystery File](Files/unknown_file.jpg)  
 **Ans**: Replace the file extension with .zip, and view the file in zip viewer. You'll encounter many levels of folders in folders. You will find '1.txt' file, which contains 'railpass' encoded in binary, which is the password to zip file. Unpack it, and there's a file named no_flag.doc, which contains the flag.
 
 ### Snow
 ---
 Clues given were, "Real light is in the dark" and "1998". These refer to Snow Steganography Cipher. Snow is a way of encrypting a message into a file, by appending tabs and spaces to the end of file.  
 Given Base64 encrypted key, `S2V5MTIz`.  
-The file: [Snow encrypted File]<https://drive.google.com/file/d/1UmF-s5tJOr4VlN34mfPx3P6WpbIUA4Tn/view>. Download Snow from [here](http://www.darkside.com.au/snow/)  
+The file: [Snow encrypted File]<Files/snow>. Download Snow tool from [here](http://www.darkside.com.au/snow/)  
 **Ans**: Decrypt the given key to get, 'Key123'. Using 'Key123' as the password, decipher the flag with Snow.  
 Run `Snow -C -p "Key123" quest_out`
 
@@ -69,13 +71,14 @@ Run `Snow -C -p "Key123" quest_out`
 ---
 Cute Crypt is a simple crypto, which converts letters into some characters.  
 Lower-case letters are encrypted to `y num1 num2 num3`, and Upper-case letters to `x num1 num2`; adding these numbers we get 128 - ASCII(the_actual_letter).  
-Given encrypted flag: `y 4 4 4 y 5 6 6 x 24 25 y 7 7 7 x 25 26 x 29 30 y 10 10 11 y 6 6 6 x 28 28 y 5 6 6 x 21 22 y 4 5 5 x 22 22 y 5 6 6 x 25 26 x 31 32 y 7 7 7 x 29 30 y 4 4 4 y 8 8 8 x 27 28 x 22 23 y 4 4 5 y 8 8 8 x 27 28 x 22 22`.  
+Given encrypted flag: [Flag](Files/cute_crypt.txt)  
 Crypto: [Cute Crypt](http://virus-ctf.000webhostapp.com/crypt_me.php)  
 **Ans**: Write a python script or convert all of the characters manually to get the flag.
 
 ### I'm Split Up
 ---
 The files are actually a 10x10 QR code split into a 100 files.  
+Link: [Files](Files/im_split_up_data.zip)
 **Ans**: Use a good image editor or write a program/script to piece all the images together and scan the QR code finally.
 
 ### Look Closely II
