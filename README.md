@@ -69,7 +69,7 @@ Run `Snow -C -p "Key123" quest_out`
 ---
 Cute Crypt is a simple crypto, which converts letters into some characters.  
 Lower-case letters are encrypted to `y num1 num2 num3`, and Upper-case letters to `x num1 num2`; adding these numbers we get 128 - ASCII(the_actual_letter).  
-Given encrypted flag: <../Files/cute_crypt.txt> `y 4 4 4 y 5 6 6 x 24 25 y 7 7 7 x 25 26 x 29 30 y 10 10 11 y 6 6 6 x 28 28 y 5 6 6 x 21 22 y 4 5 5 x 22 22 y 5 6 6 x 25 26 x 31 32 y 7 7 7 x 29 30 y 4 4 4 y 8 8 8 x 27 28 x 22 23 y 4 4 5 y 8 8 8 x 27 28 x 22 22`.  
+Given encrypted flag: [Flag](Files/cute_crypt.txt) `y 4 4 4 y 5 6 6 x 24 25 y 7 7 7 x 25 26 x 29 30 y 10 10 11 y 6 6 6 x 28 28 y 5 6 6 x 21 22 y 4 5 5 x 22 22 y 5 6 6 x 25 26 x 31 32 y 7 7 7 x 29 30 y 4 4 4 y 8 8 8 x 27 28 x 22 23 y 4 4 5 y 8 8 8 x 27 28 x 22 22`.  
 Crypto: [Cute Crypt](http://virus-ctf.000webhostapp.com/crypt_me.php)  
 **Ans**: Write a python script or convert all of the characters manually to get the flag.
 
