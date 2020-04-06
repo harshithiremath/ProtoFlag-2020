@@ -6,7 +6,7 @@
 ### The First Flag
 ---
 A link can seen in the Poster of the event. The link is <http://bit.ly/protoctf-1>.  
-**Ans**: Visiting the link will take us to a page with a fake flag displayed. Inspecting the sourcecode of the page reveals the real flag.
+**Ans**: Visit the link, where a fake flag is displayed. Inspecting the sourcecode of the page reveals the real flag.
 
 ### Look Closely!
 ---
