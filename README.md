@@ -3,7 +3,7 @@
 ### [ProtoFlag 2020](http://hackerrank.com/protoflag-2020)
 
 ProtoFlag 2020 was a basic Jeopardy-style __CTF__ hosted by the __Protocol Club, BMSCE__  
-from 3rd - 5th March 2020, during the CoVid-19 Quaratine  
+from 3rd - 5th March 2020, during the CoVid-19 Quarantine  
   
   
   
